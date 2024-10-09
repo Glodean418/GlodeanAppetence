@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
 
 public class EventsManager : MonoBehaviour
 {
@@ -15,25 +16,25 @@ public class EventsManager : MonoBehaviour
     private AudioSource eventSFX;
 
     [SerializeField]
-    private AudioClip carBreakdown;
+    private AudioSource carBreakdown;
 
     [SerializeField]
-    private AudioClip drought;
+    private AudioSource drought;
 
     [SerializeField]
-    private AudioClip changeOne;
+    private AudioSource changeOne;
 
     [SerializeField]
-    private AudioClip changeTwo;
+    private AudioSource changeTwo;
 
     [SerializeField]
-    private AudioClip changeThree;
+    private AudioSource changeThree;
 
     [SerializeField]
-    private AudioClip changeFour;
+    private AudioSource changeFour;
 
     [SerializeField]
-    private AudioClip changeFive;
+    private AudioSource changeFive;
 
     private FamilyMenuScript familyMenuScript;
 
@@ -47,19 +48,19 @@ public class EventsManager : MonoBehaviour
 
         // Add events
         //negative
-        events.Add(new Events("Car Breakdown", "Your car broke down, and you had to pay 200 coins for repairs", -200, 0));
-        events.Add(new Events("Speeding Ticket", "You were pulled over for speeding and got a ticket for 100 coins", -100, 0));
-        events.Add(new Events("Injury", "Work injuries, pay 100 coins", -100, 0));
+        events.Add(new Events("Car Breakdown", "Your car broke down, and you had to pay 200 coins for repairs", -200, 0, carBreakdown));
+        events.Add(new Events("Speeding Ticket", "You were pulled over for speeding and got a ticket for 100 coins", -100, 0, changeFour));
+        events.Add(new Events("Injury", "Work injuries, pay 100 coins", -100, 0, changeTwo));
 
-        events.Add(new Events("Drought", "Drought caused food prices to increase to 80 coins", 80, 0, true));
-        events.Add(new Events("Epidemic", "An Epidemic has caused the medicince costs to increase to 300", 0, 300, true));
+        events.Add(new Events("Drought", "Drought caused food prices to increase to 80 coins", 80, 0, true, drought));
+        events.Add(new Events("Epidemic", "An Epidemic has caused the medicine costs to increase to 300", 0, 300, changeFour));
 
         //positive
-        events.Add(new Events("Lucky Find", "You found 40 coins on the floor when coming out of work", 40, 0));
-        events.Add(new Events("Lottery", "You won a random lottery at work and were given 100 coins", 100, 0));
-        events.Add(new Events("Welfare", "Asked government for welfare and got 75 coins", 75, 0));
-        events.Add(new Events("Charity", "Charity help gave 25 coins", 25, 0));
-        events.Add(new Events("Promotion", "Your boss notices you, you got 30 extra coins", 30, 0));
+        events.Add(new Events("Lucky Find", "You found 40 coins on the floor when coming out of work", 40, 0, changeOne));
+        events.Add(new Events("Lottery", "You won a random lottery at work and were given 100 coins", 100, 0, changeThree));
+        events.Add(new Events("Welfare", "Asked government for welfare and got 75 coins", 75, 0, changeFive));
+        events.Add(new Events("Charity", "Charity help gave 25 coins", 25, 0, changeOne));
+        events.Add(new Events("Promotion", "Your boss notices you, you got 30 extra coins", 30, 0, changeThree));
 
         OnSceneLoaded();
     }
@@ -104,6 +105,7 @@ public class EventsManager : MonoBehaviour
         else
         {
             CurrencySystem.Instance.AddCurrency(selectedEvent.moneyChange);
+            selectedEvent.sfx.Play();
             Debug.Log("Affecting currency");
         }
     }
@@ -121,6 +123,8 @@ public class EventsManager : MonoBehaviour
                 TriggerRandomEvent();
             }
         }
+
+        //Debug.Log()
     }
 
     public void ExitPanel()

@@ -11,7 +11,7 @@ public class GameOverScript : MonoBehaviour
     [SerializeField]
     private TMP_Text daysLasted;
     [SerializeField]
-    Text[] familyList;
+    TMP_Text[] familyList;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class GameOverScript : MonoBehaviour
 
         //SetNames and States
         var i = 0;
-        foreach (Text member in familyList)
+        foreach (TMP_Text member in familyList)
         {
             member.text = familyScript.Instance.FamilyNames[i] + " - " + familyScript.Instance.HungerValues[familyScript.Instance.FamilyFoodState[i]] + " - " + familyScript.Instance.HealthValues[familyScript.Instance.FamilyHealthState[i]];
             i++;
