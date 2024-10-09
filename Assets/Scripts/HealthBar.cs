@@ -19,13 +19,14 @@ public class HealthBar : MonoBehaviour
     void Update()
     {
         healthBar.color = Color.green;
+        HealthBarRotation(familyScript.FamilyFoodState[0]);
     }
 
     public void HealthBarRotation(int state)
     {
         if (familyScript.FamilyFoodState[state] == 0)
         {
-            healthBar.fillAmount = 1f;
+            healthBar.fillAmount = 1.0f;
             healthBar.color = Color.green;
         }
         else if (familyScript.FamilyFoodState[state] == 1)

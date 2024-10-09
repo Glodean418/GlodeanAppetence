@@ -12,9 +12,6 @@ public class familyScript : MonoBehaviour
     [SerializeField] public int[] FamilyDeathList;
     [SerializeField] public string[] FamilyNames;
 
-    [SerializeField] private AudioSource SatisfiedMusic;
-    [SerializeField] private AudioSource HungryMusic;
-    [SerializeField] private AudioSource StarvingMusic;
     public string[] HealthValues { get; } = { "Healthy", "Sick", "Bedridden", "Dead" };
     public string[] HungerValues { get; } = { "Fine", "Hungry", "Starving", "Dead" };
 
@@ -39,8 +36,6 @@ public class familyScript : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(transform.gameObject);
-
-        SatisfiedMusic.playOnAwake = true;
     }
 
     public bool DayUpdate(bool[] foodList, bool[] medList)
@@ -63,7 +58,7 @@ public class familyScript : MonoBehaviour
 
                 if (FamilyFoodState[i] > 0)
                 {
-                    if ((Random.Range(0f, 10.0f)) > 8f && day > 1)
+                    if ((Random.Range(0f, 10.0f)) > 5f && day > 1)
                     {
                         FamilyHealthState[i] = FamilyHealthState[i] + 1;
                     }

@@ -13,6 +13,7 @@ public class LevelSelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         FactoryButton.onClick.AddListener(() => LoadFactory());
         GroceryButton.onClick.AddListener(() => LoadGrocery());
     }
@@ -25,7 +26,7 @@ public class LevelSelect : MonoBehaviour
 
     public void LoadFactory()
     {
-        SceneManager.LoadScene("Factory");
+        SceneManager.LoadScene("FactoryTutorial");
     }
 
     public void LoadGrocery()
