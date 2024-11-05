@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7241218186283564040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6831906439427772640}
+  - component: {fileID: 2842076529747139217}
+  - component: {fileID: 2060205254354001505}
+  m_Layer: 0
+  m_Name: Spawn_position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6831906439427772640
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7241218186283564040}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -14.6}
+  m_LocalScale: {x: 70, y: 70, z: 69.39094}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -106.9, y: 22.2}
+  m_SizeDelta: {x: 1.66, y: 1.39}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2842076529747139217
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7241218186283564040}
+  m_CullTransparentMesh: 1
+--- !u!114 &2060205254354001505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7241218186283564040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e261d8b2213d4740a749065e2d30812, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gs_pfb:
+  - {fileID: 4472832560252481884, guid: 430d438eedb82184c9d2a50dfb5b5e42, type: 3}
+  - {fileID: 3440620414349768034, guid: ae99ee1a80004ad48a5cffb050e49193, type: 3}
+  - {fileID: 2623873353189491927, guid: 71f16ad5c383d7c4d90d2842e3343a4d, type: 3}
+  - {fileID: 6351445337514072174, guid: 535f7d83851845c4ebaa737667f5b132, type: 3}
+  - {fileID: 3841444606402038489, guid: e0993cd4c373fe8408cf9aab89a96c5c, type: 3}
+  - {fileID: 1740244964939806438, guid: 7fc27a06fb21e4a4aa2403c19866287c, type: 3}
+  - {fileID: 6245580116580274566, guid: d164aa2f704769e46b17ea0d093538d1, type: 3}
+  - {fileID: 1537373964715720931, guid: 22308b17ee669bd4c8906b334524336f, type: 3}
+  - {fileID: 1878427137793293770, guid: ed429e40e61dfee48b59baa7969fad84, type: 3}
+  - {fileID: 6068333043371632382, guid: b3fae6314b96eb34a99ed5fcffc03dab, type: 3}
+  - {fileID: 8913135151746693257, guid: 021cdda8982c26a47a9bc358520a4d86, type: 3}
+  - {fileID: 6686302460449958646, guid: 8b1a2f6605eec39438edc69265de3e1b, type: 3}
+  - {fileID: 3879986943848374863, guid: 4cf1afcd3c15cbf4a910d6cbc5868ce6, type: 3}
+  - {fileID: 8872478151049845183, guid: f49a6e75046d7be4cb0c723b52978cbb, type: 3}
+  - {fileID: 8867243600762326302, guid: ac9b4a17dbc61a946b42c6eac8057ff1, type: 3}
+  Spawn_position: {fileID: 7241218186283564040}
+  _box: {fileID: 0}
+  nextFruit: 0

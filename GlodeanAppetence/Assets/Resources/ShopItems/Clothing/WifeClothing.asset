@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32aeeebc479d33749a6e0cceff575560, type: 3}
+  m_Name: WifeClothing
+  m_EditorClassIdentifier: 
+  itemName: Adult Clothing
+  itemDescription: des
+  cost: 100
+  available: 1
+  itemIcon: {fileID: 21300000, guid: 689a71694cb215a45b48bb9921e2b3b3, type: 3}
+  nextUpgrade: {fileID: 11400000, guid: 13f51e20583f8404f91d7077fb48dd42, type: 2}
+  isFinalUpgrade: 0
+  clothingIndex: 1
+  familyMember: wife
