@@ -20,4 +20,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: ecacd1b71e6999d4b9e67a2930d6aff5
+  - enabled: 1
+    path: Assets/Scenes/FactoryTutorial.unity
+    guid: 124fc3f1e35e2b044b5bc735ca97d299
+  - enabled: 1
+    path: Assets/Scenes/GameSurvived.unity
+    guid: cb211fb2153101847b6b4a099f30da4f
+  - enabled: 1
+    path: Assets/Scenes/GroceryStore.unity
+    guid: dc8c6076401f70d4c86a4c89284e4e1d
+  - enabled: 1
+    path: Assets/Scenes/GroceryStoreTutorial.unity
+    guid: 1e85b720dc505c04e8389a4d4ecffb59
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 33a63af7aa90afe4a8248996067e298a
+  - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: 43e9ed1855ff5194ea60c95175c20112
   m_configObjects: {}

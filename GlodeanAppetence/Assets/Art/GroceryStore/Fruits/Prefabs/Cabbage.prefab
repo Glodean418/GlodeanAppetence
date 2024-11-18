@@ -119,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.21697271, y: 0.2847767}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.24, y: 10.24}
+  m_Size: {x: 8.17876, y: 5.7649384}
   m_EdgeRadius: 0
 --- !u!114 &4231480953350593625
 MonoBehaviour:
@@ -147,6 +147,8 @@ MonoBehaviour:
   fruitNames: Cabbage
   slotPos: {fileID: 8545669582732142212, guid: f66c9f5f22fab6b4882190f2adb1f2d6, type: 3}
   objDrag: {fileID: 2623873353189491927}
+  correct: {fileID: 0}
+  wrong: {fileID: 0}
 --- !u!50 &-8348861722953073649
 Rigidbody2D:
   serializedVersion: 4

@@ -119,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00000023841858, y: -0.040682316}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.24, y: 10.24}
+  m_Size: {x: 7.582085, y: 9.833177}
   m_EdgeRadius: 0
 --- !u!114 &9050045558654085907
 MonoBehaviour:
@@ -147,6 +147,8 @@ MonoBehaviour:
   fruitNames: Flour
   slotPos: {fileID: 8183268696838005337, guid: 96effe5cde1d54c4db59a9683c40bc63, type: 3}
   objDrag: {fileID: 3841444606402038489}
+  correct: {fileID: 0}
+  wrong: {fileID: 0}
 --- !u!50 &63711469632462811
 Rigidbody2D:
   serializedVersion: 4
